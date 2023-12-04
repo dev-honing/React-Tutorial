@@ -2,16 +2,19 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TestComponent from './components/test.js';
+import Container from './components/container/container.js';
+import Header from './components/header/header.js';
+import Footer from './components/footer/footer.js';
+import {Style} from './main.css';
 
 const App = () => {
   return (
-    <div>
-      <h1>Hello, React 18!</h1>
-      <TestComponent />
+    <div id="React">
+      <Header />
+      <Container />
+      <Footer />
     </div>
   );
 };
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+ReactDOM.render(<App />, document.getElementById('root'));
