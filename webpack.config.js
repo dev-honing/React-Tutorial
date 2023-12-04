@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.', // 진입점 설정
+  entry: './src/index.js', // 진입점 설정
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
