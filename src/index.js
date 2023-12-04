@@ -1,5 +1,7 @@
 // src/index.js
 
+// src/index.js
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Container from './components/container/container.js';

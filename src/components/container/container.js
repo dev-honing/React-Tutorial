@@ -1,3 +1,5 @@
+// src/components/container/container.js
+
 import React from 'react';
 
 const Container = () => {

@@ -1,3 +1,5 @@
+// src/components/footer/footer.js
+
 import React from 'react';
 
 const Footer = () => {
