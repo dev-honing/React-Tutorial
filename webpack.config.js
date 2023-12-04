@@ -23,18 +23,19 @@ module.exports = {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'], // CSS 파일 로딩 및 적용
       },
-
     ],
   },
   // html 플러그인 세팅
   plugins: [
     new HtmlWebpackPlugin({
       template: 'public/index.html',
-      filename: 'bundle.html'
+      filename: 'index.html'
     }),
   ],
   devServer: {
-    static: path.resolve(__dirname, 'public'), // 정적 파일 경로 설정
+    static: {
+      directory: path.resolve(__dirname, 'dist'),
+    },
     port: 3000,
   },
 };
